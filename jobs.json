@@ -1,0 +1,23 @@
+[
+  {
+    "id": "software-dev-001",
+    "title": "Software Developer",
+    "location": "Bangalore",
+    "salary": "15,00,000",
+    "description": "Work with a dynamic team to design and build scalable web applications using modern frameworks and technologies."
+  },
+  {
+    "id": "data-analyst-002",
+    "title": "Data Analyst",
+    "location": "Mumbai",
+    "salary": "10,00,000",
+    "description": "Analyze large datasets to extract actionable insights and present your findings using visualization tools."
+  },
+  {
+    "id": "ml-engineer-003",
+    "title": "Machine Learning Engineer",
+    "location": "Remote",
+    "salary": "20,00,000",
+    "description": "Build and optimize machine learning models that power intelligent features across our platform."
+  }
+]

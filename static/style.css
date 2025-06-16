@@ -1,0 +1,28 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  border-top: 1px solid #dee2e6;
+  background-color: #ffffff;
+  margin-top: 50px;
+  padding-top: 15px;
+}

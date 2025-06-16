@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | YourCompany</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container my-5">
+    <h1 class="mb-4 text-center">🛠️ Admin Dashboard</h1>
+
+    {% if applications %}
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover align-middle">
+          <thead class="table-dark">
+            <tr>
+              <th>#</th>
+              <th>Job ID</th>
+              <th>Applicant Name</th>
+              <th>Email</th>
+              <th>LinkedIn</th>
+              <th>Resume</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for app in applications %}
+              <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ app.job_id }}</td>
+                <td>{{ app.name }}</td>
+                <td><a href="mailto:{{ app.email }}">{{ app.email }}</a></td>
+                <td><a href="{{ app.linkedin }}" target="_blank">Profile</a></td>
+                <td><a href="{{ app.resume }}" target="_blank">View Resume</a></td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    {% else %}
+      <p class="text-muted text-center">No applications submitted yet.</p>
+    {% endif %}
+
+    <div class="text-center mt-4">
+      <a href="/" class="btn btn-outline-secondary">Back to Home</a>
+    </div>
+  </div>
+
+  <footer class="py-3 my-4">
+    <p class="text-center text-body-secondary">© 2025 YourCompany, Inc</p>
+  </footer>
+</body>
+</html>
